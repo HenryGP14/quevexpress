@@ -1,0 +1,167 @@
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(243, 243, 243);
+	font-size: 16px;
+}
+
+main {
+    display: flex;
+}
+
+
+/****  PANEL DE OPCIONES A LA DERECHA   ****/
+main > .panelOpciones {
+    background-color: rgb(225, 232, 242);
+    width: 95px;
+    color: rgb(78, 78, 78);
+    height: 100vh;
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.panelOpciones > .opciones {
+    font-size: 20px;
+}
+.panelOpciones > .opciones > h1,
+.panelOpciones > .salir > h1 {
+    margin: 0px 0px 0px 2px;
+    padding: 20px 9px;
+    cursor: pointer;
+}
+.opciones > .logotipo {
+    margin-bottom: 20px;
+}
+.opciones > .logotipo > h1 {
+    font-size: 50px;
+    margin: 8px 0px;
+}
+.opciones > .logotipo > h3 {
+    font-size: 17px;
+    margin: 8px 0px;
+}
+
+
+
+
+
+/****   TABLEROS   ****/
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 35px;
+    margin: 0px 0px 40px 0px;
+    max-width: 1050px;
+}
+.tarjeta-pedido{
+    padding: 15px 5px;
+    background-color: rgb(219, 228, 241);
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    border: 3px solid rgb(192, 209, 233);
+    border-radius: 7px;
+}
+.tarjeta-pedido > div {
+    width: 70%;
+}
+.tarjeta-pedido > div > span {
+    font-size: 32px;
+}
+.tarjeta-pedido > div > p {
+    text-align: center;
+    margin: auto;
+}
+.tarjeta-pedido > h5 {
+    font-size: 50px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 0px;
+    color: rgb(48, 112, 198);
+}
+
+
+
+
+
+
+/****   PANEL EMPLEADOS   ****/
+.panelEmpleados {
+    margin: 30px;
+    padding: 0px;
+    font-size: 1rem;
+    color: rgb(58, 58, 58);
+    width: 100%;
+}
+.panelEmpleados > h3 {
+    font-size: 28px;
+    margin: 35px 0px;
+}
+.panelEmpleados > h5 {
+    font-size: 17px;
+    margin: 0px 0px;
+    color: rgb(92, 92, 92);
+}
+
+.tablaEmpleados {
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+table {
+    font-size: 1rem;
+    color: rgb(58, 58, 58);
+    width: 100%;
+    text-align: center;
+    border-spacing: 0ch;
+}
+tr th {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    font-weight: bold;
+    padding: 15px 0px;
+    border-bottom: 2px solid rgb(58, 58, 58);
+}
+table tr td {
+    padding: 15px 0px;
+    border-bottom: 1px solid rgb(110, 110, 110);
+}
+table tr td > i {
+    font-size: 30px;
+    color: rgb(25, 18, 192);
+}
+
+
+
+
+
+/****   OTRAS OPCIONES   ****/
+.estadoDesocupado {
+    border-radius: 4px;
+    border: 2px solid rgb(58, 126, 77);
+    color: rgb(56, 129, 77);
+    padding: 5px;
+}
+.estadoOcupado {
+    border-radius: 4px;
+    border: 2px solid rgb(209, 53, 92);
+    color: rgb(179, 39, 74);
+    padding: 5px;
+}
+
+.btnPanelActivado {
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    border-left: 4px solid rgb(25, 18, 192);
+    color: rgb(25, 18, 192);
+}
+
+.logotipo {
+    color: rgb(25, 18, 192);
+    padding: 0px;
+    margin: 0px;
+}

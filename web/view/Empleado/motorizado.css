@@ -1,0 +1,147 @@
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(243, 243, 243);
+	font-size: 16px;
+}
+
+#nombreUsuario {
+	color: white;
+	background-color: rgb(90, 90, 217);
+	display: inline-block;
+	padding: 20px 20px;
+	border-radius: 5px;
+}
+
+
+main {
+    padding: 0px 30px;
+    margin: 0px 0px 25px 0px;
+}
+
+main > h3 {
+    margin: 20px 0px;
+}
+
+main > .tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 35px;
+    margin: 0px 0px 40px 0px;
+    width: 100%;
+    max-width: 700px;
+}
+main > .tarjetas > .tarjeta-pedido{
+    padding: 15px 5px;
+    background-color: rgb(219, 228, 241);
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    border: 3px solid rgb(192, 209, 233);
+    border-radius: 7px;
+}
+
+.tarjeta-pedido > div {
+    width: 70%;
+}
+.tarjeta-pedido > div > span {
+    font-size: 2em;
+}
+.tarjeta-pedido > div > p {
+    text-align: center;
+    margin: auto;
+}
+.tarjeta-pedido > h5 {
+    font-size: 3.125em;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 0px;
+    color: rgb(48, 112, 198);
+}
+
+
+.lista-pedidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.lista-pedidos > .cliente {
+    border-radius: 10px 10px;
+    
+    background-color: rgb(233, 242, 255);
+    box-shadow: 2px 2px 15px 0px rgba(48, 112, 198, 0.7);
+    color: rgb(52, 54, 60);
+    
+    font-weight: normal;
+    padding: 10px 20px;
+}
+
+.lista-pedidos > .cliente > h5 {
+    margin: 10px 0px 20px 0px;
+    font-size: 1.125em;
+    font-weight: normal;
+}
+
+.lista-pedidos > .cliente > p {
+    font-size: 1em;
+    margin: 2px;
+    padding: 0px;
+}
+
+.lista-pedidos > .cliente > p > span {
+    font-weight: bold;
+}
+
+.lista-pedidos > .cliente > button {
+    margin: 15px 0px 10px 0px;
+    padding: 13px 20px;
+    border-radius: 7px;
+    border: none;
+    width: 100%;
+    background-color: rgb(56, 119, 202);
+    color: white;
+}
+.lista-pedidos > .cliente > button:hover{
+    background-color: rgb(35, 99, 184);
+    cursor: pointer;
+}
+
+@media (max-width: 1394px){
+	body {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1050px){
+	body {
+		font-size: 15px;
+    }
+    .lista-pedidos {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media (max-width: 970px){
+	body {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 700px){
+    .lista-pedidos {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 540px){
+    main > .tarjetas {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        max-width: 200px;
+    }
+}

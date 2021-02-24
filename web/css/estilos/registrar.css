@@ -1,0 +1,17 @@
+/*header nav ul #registrar {
+	background-color: rgb(39, 36, 212);
+}*/
+
+.panelDatos .subPanel form .chequear {
+	margin-top: 1em;
+}
+
+.panelDatos .subPanel form .chequear #tCondiciones {
+	float: left;
+	width: 30px;
+	height: 30px;
+}
+
+.panelDatos .subPanel form .tC {
+	margin-left: 0.3em;
+}

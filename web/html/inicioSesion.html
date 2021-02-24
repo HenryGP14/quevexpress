@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../css/recursos/normalize.css" />
+		<link rel="stylesheet" href="../css/recursos/all.min.css" />
+		<link rel="stylesheet" href="../css/estilos/encabezado.css" />
+		<link rel="stylesheet" href="../css/estilos/panelRegistrarSesison.css" />
+		<link rel="stylesheet" href="../css/estilos/inciaSesion.css" />
+
+		<title>Inicio de Sesión</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="../index.html" class="logotipo">
+					<i class="fas fa-motorcycle"></i>
+					<h2>QueveXpress</h2>
+				</a>
+				<ul class="barra-menu barra-menu-ocultar">
+					<li><a href="contactos.html" id="contactos">Contactos</a></li>
+
+					<!-- Falta -->
+					<li>
+						<a href="inicioSesion.html" id="inicioSesion" class="activo"
+							>Iniciar sesión</a
+						>
+					</li>
+					<li><a href="registrar.html" id="registrar">Regístrate</a></li>
+					<!-- Hasta aquí -->
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="panelEmpresa">
+				<img src="../img/empresa/delivereo.png" alt="" />
+			</div>
+			<div class="panelDatos">
+				<div class="subPanel">
+					<h1>Inicia sesión en QueveXpress</h1>
+					<p>
+						Estás a un paso de enviar tu paquetería, correspondencia express o
+						domicilios.
+					</p>
+					<form action="./cuentaCliente/inicioCliente.html" method="GET">
+						<div class="campos">
+							<label for="correo" class="texto">Correo</label><br />
+							<input
+								type="email"
+								placeholder="ej: pedro@quevexpress.com"
+								name="correo"
+								class="formulario"
+								id="correo"
+								required
+							/><br />
+						</div>
+						<div class="campos">
+							<label for="credenciales" class="texto">Contraseña</label><br />
+							<input
+								type="password"
+								name="credenciales"
+								id="credenciales"
+								class="formulario"
+								required
+							/><br />
+						</div>
+						<div id="clear"></div>
+						<div class="panelEnviar">
+							<div class="linkCredenciales">
+								<p>
+									<a href="recuperarCredenciales.html"
+										>¿Olvidaste tu contraseña?</a
+									>
+								</p>
+							</div>
+							<input type="submit" value="Enviar" id="enviar" />
+							<p>
+								¿Aún no tienes cuenta?
+								<a href="registrar.html">Regístrate ahora</a>
+							</p>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

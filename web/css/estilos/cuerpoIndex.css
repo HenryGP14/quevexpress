@@ -1,0 +1,134 @@
+body {
+	background-color: rgb(243, 243, 243);
+	font-size: 16px;
+}
+
+main {
+	margin: 0px;
+	padding: 0px;
+}
+
+main > .panelPublicidad {
+	padding: 0px 30px;
+	padding-top: 70px;
+	background-image: linear-gradient(to top, rgba(25, 18, 192, 0.7), rgba(25, 18, 192, 1));
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+/************Slogan*********/
+.panelPublicidad > .slogan {
+	padding: 25px 5px 0px 0px;
+	width: 50%;
+}
+
+.panelPublicidad > .slogan > h1 {
+	margin-top: 35px;
+	font-size: 45px;
+	max-width: 550px;
+}
+.panelPublicidad > .slogan > h2 {
+	margin-top: 40px;
+	font-size: 35px;
+	max-width: 550px;
+	font-weight: normal;
+}
+.panelPublicidad > .slogan > a {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: white;
+	color: rgb(25, 18, 192);
+	padding: 21px 32px;
+	border-radius: 8px;
+	margin: 30px 0px 0px 0px;
+
+	transition: ease 0.2s;
+}
+.panelPublicidad > .slogan > a:hover {
+	/*background-color: rgb(230, 230, 230);*/
+	background-color: rgb(232, 232, 255);
+}
+
+.panelPublicidad > .imagen {
+	padding: 25px 0px 0px 5px;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.panelPublicidad > .imagen > img {
+	height: 100%;
+	max-height: 600px;
+}
+
+/*******SERVICIOS***********/
+main > .servicios {
+	padding: 0px 30px;
+}
+
+main > .servicios > h3 {
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(52, 54, 60);
+	margin: 30px 0px;
+}
+
+main > .servicios > .tarjetas_servicios {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 35px;
+}
+
+.servicios > .tarjetas_servicios > .tarjeta {
+	/*background-color: brown;*/
+	border-radius: 10px 10px;
+	box-shadow: 2px 2px 15px 0px rgba(85, 28, 28, 0.3);
+	overflow: hidden;
+	height: 100%; /*350px*/
+	display: flex;
+	max-width: 745px;
+}
+
+.tarjetas_servicios > .tarjeta > .imagen,
+.tarjetas_servicios > .tarjeta > .textos {
+	width: 50%;
+	height: 100%;
+}
+
+.tarjeta > .imagen > img {
+	/*height: 100%;*/
+	width: 100%;
+}
+
+.tarjeta > .textos {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.tarjeta > .textos > i,
+.tarjeta > .textos > h5,
+.tarjeta > .textos > p {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.tarjeta > .textos > i {
+	color: rgb(12, 134, 238);
+	font-size: 50px;
+	display: block;
+	margin-top: 30px;
+}
+.tarjeta > .textos > h5 {
+	color: rgb(52, 54, 60);
+	font-size: 19px;
+	display: block;
+	margin: 25px 0px;
+}
+.tarjeta > .textos > p {
+	color: rgb(52, 54, 60);
+	font-size: 1rem;
+	display: block;
+}
